@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>features/step_definitions/access_Status.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Icam enterprise C0 Coverage Information - Simploco - RCov</h1>
+    <h2>features/step_definitions/access_Status.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="features-step_definitions-access_Status_rb.html">features/step_definitions/access_Status.rb</a></td>
+            <td class='right_align'><tt>18</tt></td>
+            <td class='right_align'><tt>10</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> And(/^user verify requested access status through ICAM myAccess$/) do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a>   visit Login_Page</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line5">5</a>   on(Login_Page).login_SSO(&quot;Login.xlsx&quot;, &quot;Login_info&quot;, 1, 0)</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   visit My_Access_Home_page</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>   on(My_Access_Home_page).agreed_Terms_condition</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a>   on(My_Request_History).myRequestHistoryBtn</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>   on(My_Request_History).myRequestID</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>   on(My_Request_History).access_status # Access status in History should be &quot; Completed &quot;</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   on(My_Profile).my_Profile_Btn.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line12">12</a>   # on(My_Profile).myRole</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line13">13</a>   # on(My_Profile).my_Profile_Btn.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line14">14</a>   # #roles = @browser.ps(class: &quot;sv ng-binding ng-scope&quot;).map(&amp;:text)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line15">15</a>   #  puts &quot;    *****************   Requested access has been approved :  &lt;&lt; #{$myApproved_Role} &gt;&gt;  *****************   &quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line16">16</a>   # roles = @browser.divs(class: &quot;ng-binding ng-scope&quot;).map(&amp;:text)</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a>    puts   &quot;***********************************     Current Role has been approved  *******************************************&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line18">18</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line19">19</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2017-06-08 01:38:04 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

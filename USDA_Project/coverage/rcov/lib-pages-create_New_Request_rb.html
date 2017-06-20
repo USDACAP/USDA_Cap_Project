@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/create_New_Request.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Quazi usada C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/create_New_Request.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-create_New_Request_rb.html">lib/pages/create_New_Request.rb</a></td>
+            <td class='right_align'><tt>226</tt></td>
+            <td class='right_align'><tt>92</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>73.45%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:73px"></div>
+        <div class="uncovered" style="width:27px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>34.78%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:35px"></div>
+        <div class="uncovered" style="width:65px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class Create_New_Request &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a>   include CF</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   element(:newRoleLinkObj) { |b| b.link(title: &#39;Create request for new role&#39;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line7">7</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a>   element(:requestAppAccDropdown) { |b| b.div(class: &quot;layout-gt-sm-row&quot;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>   element(:createNewRequest_Btn) { |b| b.i(class: &quot;fa fa-plus-square fa fa-2x&quot;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line11">11</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>   element(:requestType) { |b| b.div(class: &quot;layout-gt-sm-row&quot;) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>   element(:requestNewRole) { |b| b.div(text: &quot;Request New Role - Request access to a new system or role&quot;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line14">14</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>   element(:systemType) { |b| b.div(class: &quot;layout-gt-sm-row&quot;, index: 1) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>   element(:systemRole_ICAM) { |b| b.div(text: &quot;ICAM&quot;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line17">17</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line18">18</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>   element(:role) { |b| b.element(name: &quot;selectingRole&quot;) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>   element(:administrator) { |b| b.div(text: &quot;Administrator&quot;) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>   element(:you_already_have_the_selected_role) { |b| b.span(text: &quot;You already have the selected role&quot;) }  #+++++++++++++++++++++</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line23">23</a>   element(:user_already_have_the_selected_role) { |b| b.span(class: &quot;warnings ng-scope&quot;) }  #+++++++++++++++++++++</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line25">25</a>   element(:note) { |b| b.element(name: &quot;notes&quot;) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line26">26</a>   element(:note_field) { |b| b.textarea(index: 0) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line27">27</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line28">28</a>   element(:submit) { |b| b.div(id: &#39;newrolesubmit&#39;) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line29">29</a>   element(:submit_Btn) { |b| b.div(id: &#39;newrolesubmit&#39;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line30">30</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line31">31</a>   element(:successMSG) { |b| b.span(class: &quot;md-toast-text ng-binding&quot;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line32">32</a>   # md-toast-text ng-binding</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line33">33</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line35">35</a>   element(:requestID) { |b| b.h3(id: &quot;Request ID&quot;) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line36">36</a>   element(:requestID_Number) { |b| b.p(class: &quot;sv ng-binding ng-scope&quot;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line37">37</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line38">38</a>   element(:tasks_Link) { |b| b.link(:css,&quot;a[href=&#39;#tasks&#39;]&quot;) }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line39">39</a>   element(:approve_Request_Link) { |b| b.link(title: &quot;View Approve Request task&quot;) } # ,title:&quot;/View task.*/&quot;</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line40">40</a>   element(:taskID){|b|b.p(class:&#39;sv ng-binding ng-scope&#39;,index: 1)}</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line42">42</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line43">43</a>   element(:logout_MyAccess) { |b| b.i(class: &quot;fa fa-sign-out fa fa-2x ng-scope&quot;) }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line44">44</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line45">45</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line46">46</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line47">47</a>   def createNewRequestBtn</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line48">48</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line49">49</a>     sleep 3</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line50">50</a>     createNewRequest_Btn.when_present.click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line51">51</a>     sleep 3</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line52">52</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line53">53</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line54">54</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line55">55</a>   def select_RequestType(sheetName,row,col)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line56">56</a>    sleep 1</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line57">57</a>     requestType.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line58">58</a>     # requestNewRole.when_present.click #select(&#39;Request New Role - Request access to a new system or role&#39;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line59">59</a>     dir_to_excel = Dir.pwd + &#39;/lib/config/data&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line60">60</a>     read_workbook = RubyXL::Parser.parse(&quot;#{dir_to_excel}/System_Access_Request.xlsx&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line61">61</a>     worksheet = read_workbook[sheetName]</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line62">62</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line63">63</a>     @browser.div(text: worksheet[row][col].value).when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line64">64</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line65">65</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line66">66</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line67">67</a>   def select_System(sheetName,row,col)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line68">68</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line69">69</a>     systemType.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line70">70</a>     # systemRole_ICAM.when_present.click # select ICAM system</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line71">71</a>     dir_to_excel = Dir.pwd + &#39;/lib/config/data&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line72">72</a>     read_workbook = RubyXL::Parser.parse(&quot;#{dir_to_excel}/System_Access_Request.xlsx&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line73">73</a>     worksheet = read_workbook[sheetName]</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line74">74</a>     objSelectSystem = @browser.div(text: worksheet[row][col].value)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line75">75</a>     objSelectSystem.when_present.click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line76">76</a>     $system = objSelectSystem</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line77">77</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line78">78</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line79">79</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line80">80</a>   def select_Role(sheetName,row, col)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line81">81</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line82">82</a>     role.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line83">83</a>     # administrator.when_present.click # select Adminnistator  role</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line84">84</a>     # excel(excel_file_name, work_sheet_name,row,column)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line85">85</a>     dir_to_excel = Dir.pwd + &#39;/lib/config/data&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line86">86</a>     read_workbook = RubyXL::Parser.parse(&quot;#{dir_to_excel}/System_Access_Request.xlsx&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line87">87</a>     worksheet = read_workbook[sheetName]</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line88">88</a>     worksheet[row][col].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line89">89</a>     sleep 1</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line90">90</a>     objSelectRole =  @browser.div(text: worksheet[row][col].value)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line91">91</a>     objSelectRole.when_present.click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line92">92</a>     if @browser.text.include? &quot;You already have the selected role&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line93">93</a>       puts &quot; &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;      User  already have the selected role : #{worksheet[row][col].value}      &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line94">94</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line95">95</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line96">96</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line97">97</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line98">98</a>   def add_NOTE(sheetName, row, col)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line99">99</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line100">100</a>     note.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line101">101</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line102">102</a>     dir_to_excel = Dir.pwd + &#39;/lib/config/data&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line103">103</a>     read_workbook = RubyXL::Parser.parse(&quot;#{dir_to_excel}/System_Access_Request.xlsx&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line104">104</a>     worksheet = read_workbook[sheetName]</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line105">105</a>     # note_field.when_present.set worksheet[row][col].value  # note field valu add in buttom</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line106">106</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line107">107</a>     #############################################*******&amp;&amp;*******##########################################################</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line108">108</a>     # before subiting get user role, which will be validate with my Profile page after get access</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line109">109</a>     system = @browser.element(id: /select_value_label_/, index: 1).text</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line110">110</a>     select_Sys = system.split(/ /)[0]</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line111">111</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line112">112</a>     roles_ = @browser.element(id: /select_value_label_/, index: 2).text</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line113">113</a>     select_Roles = roles_.split(/-/)[0]+&quot; &quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line114">114</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line115">115</a>     $requested_SystemAccess_role = select_Sys+&quot; &quot;+select_Roles</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line116">116</a>     p &quot; *********************   Requested system access for : #{$requested_SystemAccess_role}  ********************************* &quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line117">117</a>     #############################################*******&amp;&amp;*******##########################################################</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line118">118</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line119">119</a>     note_field.when_present.set &quot; IT&amp;E Automated Test Scripts Requesting role :   #{$requested_SystemAccess_role}  &quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line120">120</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line121">121</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line122">122</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line123">123</a>   def submitBtn_newRequest</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line124">124</a>      if user_already_have_the_selected_role.exists?</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line125">125</a>        puts &quot; &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;      User already submitted request earlier      &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line126">126</a>      else</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line127">127</a>        submit.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line128">128</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line129">129</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line130">130</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line131">131</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line132">132</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line133">133</a>   def submit_Access_Request_Validation</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line134">134</a>     sync_obj(successMSG,&quot;***********************    Requested access not sbmited      ***********************&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line135">135</a>     success_message = successMSG.when_present.text</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line136">136</a>     successMSG_RequestID = success_message.split(&#39;t &#39;).last</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line137">137</a>     # objRefresh(requestID)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line138">138</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line139">139</a>     $requestID = requestID_Number.when_present.text</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line140">140</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line141">141</a>     if (successMSG_RequestID == $requestID)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line142">142</a>       puts &quot;  ------   Access Request submitted as expected and  Request ID : #{$requestID}  -------------  &quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line143">143</a>     else</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line144">144</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line145">145</a>     end</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line146">146</a>       closeMSG= @browser.button(class:&#39;md-action md-button ng-scope md-default-theme md-ink-ripple md-primary md-raised w&#39;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line147">147</a>       closeMSG.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line148">148</a>                       # **  TASK ID ** invalid hobe ------based on user story changed ------------############</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line149">149</a>     # @browser.element(title: &quot;View Approve Request task&quot;).when_present.flash</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line150">150</a>     # @browser.element(title: &quot;View Approve Request task&quot;).when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line151">151</a>     # @browser.element(text: &quot;Task ID&quot;).when_present.flash</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line152">152</a>     # @browser.element(class: &quot;sv ng-binding ng-scope&quot;,index: 1).when_present.flash</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line153">153</a> sleep 3</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line154">154</a>     sync_obj(tasks_Link,&quot;Request not submitted or Tasks links not displayed &quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line155">155</a>     tasks_Link.when_present.click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line156">156</a>     sync_obj(approve_Request_Link,&#39; Approve request link not displayed as expected&#39;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line157">157</a>     approve_Request_Link.when_present.click</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line158">158</a>     sync_obj(taskID,&quot;  *****  Task id not displayed as expected *******&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line159">159</a>     $task_ID = taskID.text</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line160">160</a>     #</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line161">161</a>      puts &quot;  ^^^^^ Access Request submitted as expected and  Task ID : #{$task_ID} ^^^^^^^^^^^^^  &quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line162">162</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line163">163</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line164">164</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line165">165</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line166">166</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line167">167</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line168">168</a>   def logout_myAccess</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line169">169</a>     sleep 2</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line170">170</a>     if logout_MyAccess.exists?</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line171">171</a>       logout_MyAccess.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line172">172</a>     end</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line173">173</a>     sleep 5</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line174">174</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line175">175</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line176">176</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line177">177</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line178">178</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line179">179</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line180">180</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line181">181</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line182">182</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line183">183</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line184">184</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line185">185</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line186">186</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line187">187</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line188">188</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line189">189</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line190">190</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line191">191</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line192">192</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line193">193</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line194">194</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line195">195</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line196">196</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line197">197</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line198">198</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line199">199</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line200">200</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line201">201</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line202">202</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line203">203</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line204">204</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line205">205</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line206">206</a> # def newRoleRequest</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line207">207</a> #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line208">208</a> #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line209">209</a> #   @browser.windows.each do |window|</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line210">210</a> #     if window.title.include?(&#39;MyAccess&#39;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line211">211</a> #       window.use</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line212">212</a> #       newRoleLinkObj.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line213">213</a> #       sleep 2</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line214">214</a> #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line215">215</a> #       if requestAppAccDropdown.exists?</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line216">216</a> #         requestAppAccDropdown.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line217">217</a> #       end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line218">218</a> #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line219">219</a> #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line220">220</a> #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line221">221</a> #     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line222">222</a> #   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line223">223</a> #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line224">224</a> # end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line225">225</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line226">226</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line227">227</a> </pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2017-06-19 12:12:08 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>
